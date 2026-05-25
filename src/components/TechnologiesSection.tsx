@@ -18,7 +18,7 @@ const techs = [
 ];
 
 const TechnologiesSection = () => (
-  <section id="tecnologias" className="py-24">
+  <section id="tecnologias" className="py-14 md:py-24">
     <div className="container mx-auto px-4">
       <AnimatedSection className="text-center mb-16">
         <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Stack</p>
@@ -32,7 +32,7 @@ const TechnologiesSection = () => (
           <AnimatedSection key={i} delay={i * 0.05}>
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="bg-card rounded-2xl p-6 text-center border border-border/50 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+              className="bg-card rounded-2xl p-4 md:p-6 text-center border border-border/50 hover:shadow-lg hover:border-primary/20 transition-all duration-300"
             >
               {tech.icon ? (
                 <img src={tech.icon} alt={tech.name} className="w-8 h-8 object-contain mx-auto mb-3" loading="lazy" />

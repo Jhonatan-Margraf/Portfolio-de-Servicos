@@ -25,7 +25,7 @@ const items = [
 ];
 
 const ProblemsSection = () => (
-  <section className="py-24">
+  <section className="py-14 md:py-24">
     <div className="container mx-auto px-4">
       <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
         <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Soluções</p>
@@ -40,7 +40,7 @@ const ProblemsSection = () => (
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         {items.map((item, i) => (
           <AnimatedSection key={i} delay={i * 0.1}>
-            <div className="bg-card rounded-2xl p-8 border border-border/50 hover:shadow-lg transition-shadow duration-300">
+            <div className="bg-card rounded-2xl p-5 md:p-8 border border-border/50 hover:shadow-lg transition-shadow duration-300">
               <item.icon className="w-8 h-8 text-primary mb-4" />
               <h3 className="text-lg font-bold mb-2">{item.title}</h3>
               <p className="text-sm text-muted-foreground">{item.description}</p>

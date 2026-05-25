@@ -2,7 +2,7 @@ import AnimatedSection from "./AnimatedSection";
 import WhatsAppButton from "./WhatsAppButton";
 
 const ContactSection = () => (
-  <section id="contato" className="py-24 bg-card">
+  <section id="contato" className="py-14 md:py-24 bg-card">
     <div className="container mx-auto px-4 text-center">
       <AnimatedSection>
         <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Contato</p>

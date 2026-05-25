@@ -3,7 +3,7 @@ import AnimatedSection from "./AnimatedSection";
 import bearLogoSVG from "@/assets/bear-logo.svg";
 
 const AboutSection = () => (
-  <section id="sobre" className="py-24 bg-card">
+  <section id="sobre" className="py-14 md:py-24 bg-card">
     <div className="container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection className="text-center mb-12">

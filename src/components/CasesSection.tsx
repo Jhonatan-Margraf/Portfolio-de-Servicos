@@ -20,16 +20,16 @@ const CaseCard = ({ headline, description, features, values, imageSrc, imageAlt,
       whileHover={{ y: -6, scale: 1.03 }}
       className="group bg-card rounded-2xl shadow-md hover:shadow-xl border border-border/50 overflow-hidden transition-shadow duration-300"
     >
-      <div className="bg-muted h-64 border-b border-border/50 p-3 overflow-hidden">
+      <div className="bg-muted h-48 md:h-64 border-b border-border/50 p-3 overflow-hidden">
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="w-full h-full object-contain object-center rounded-md bg-background transition-transform duration-500 ease-out group-hover:scale-125 cursor-zoom-in"
+          className="w-full h-full object-cover object-center rounded-md bg-background transition-transform duration-500 ease-out group-hover:scale-110 cursor-zoom-in"
           loading="lazy"
         />
       </div>
 
-      <div className="p-8">
+      <div className="p-5 md:p-8">
         <h3 className="text-xl font-bold mb-3 gradient-text">{headline}</h3>
         <p className="text-muted-foreground mb-4">{description}</p>
 
@@ -52,7 +52,7 @@ const CaseCard = ({ headline, description, features, values, imageSrc, imageAlt,
 );
 
 const CasesSection = () => (
-  <section id="cases" className="py-24">
+  <section id="cases" className="py-14 md:py-24">
     <div className="container mx-auto px-4">
       <AnimatedSection className="text-center mb-16">
         <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-2">Portfólio</p>
