@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
+# Bear Flow — Portfólio de Serviços
 
-## Project info
+Site institucional da **Bear Flow**, apresentando os serviços de desenvolvimento de software sob medida: sites, sistemas web e aplicativos mobile.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Sobre o projeto
 
-## How can I edit this code?
+Landing page com as seguintes seções:
 
-There are several ways of editing your application.
+- **Hero** — apresentação da empresa e CTA para WhatsApp
+- **Problemas e Soluções** — o que a Bear Flow resolve
+- **Cases** — portfólio de projetos entregues (app de suinocultura com IA, sistema para oficinas, site DareU)
+- **Como funciona** — processo de desenvolvimento em 4 etapas
+- **Tecnologias** — stack utilizada (Flutter, Python, Figma, IA, Visão Computacional etc.)
+- **Sobre** — história e diferenciais da empresa
+- **Contato** — CTA final para WhatsApp
 
-**Use Lovable**
+## Tecnologias
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Framer Motion](https://www.framer.com/motion/) — animações de entrada
 
-Changes made via Lovable will be committed automatically to this repo.
+## Rodar localmente
 
-**Use your preferred IDE**
+Requisito: Node.js 18+
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Clonar o repositório
+git clone https://github.com/Jhonatan-Margraf/Portfolio-de-Servicos.git
+cd Portfolio-de-Servicos
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Instalar dependências
+npm install
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Iniciar servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O site estará disponível em `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts disponíveis
 
-**Use GitHub Codespaces**
+| Comando | Descrição |
+|---|---|
+| `npm run dev` | Servidor de desenvolvimento com hot-reload |
+| `npm run build` | Build de produção em `/dist` |
+| `npm run preview` | Preview do build de produção |
+| `npm run lint` | Verificação de código com ESLint |
+| `npm run test` | Testes unitários com Vitest |
+| `npm run test:e2e` | Testes end-to-end com Playwright |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Estrutura
 
-## What technologies are used for this project?
+```
+src/
+├── assets/          # Imagens e logos
+├── components/      # Componentes de seção e UI
+│   ├── Navbar.tsx
+│   ├── HeroSection.tsx
+│   ├── CasesSection.tsx
+│   └── ...
+├── pages/
+│   └── Index.tsx    # Página principal
+└── main.tsx
+```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Desenvolvido por [Bear Flow](https://github.com/Jhonatan-Margraf)
